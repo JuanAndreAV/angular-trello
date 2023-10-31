@@ -9,6 +9,7 @@ import { BtnComponent } from './components/btn/btn.component';
 import { BoardsComponent } from './pages/boards/boards.component';
 import { ComponentsComponent } from './components/components.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    OverlayModule
+    OverlayModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
