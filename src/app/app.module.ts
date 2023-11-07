@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import {OverlayModule} from '@angular/cdk/overlay';
 import {CdkAccordionModule} from '@angular/cdk/accordion';
 import {DragDropModule} from '@angular/cdk/drag-drop';
+import {DialogModule} from '@angular/cdk/dialog';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,6 +14,7 @@ import { ComponentsComponent } from './components/components.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { BoardComponent } from './pages/board/board.component';
+import { TodoDialogComponent } from './components/todo-dialog/todo-dialog.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,8 @@ import { BoardComponent } from './pages/board/board.component';
     BoardsComponent,
     ComponentsComponent,
     NavbarComponent,
-    BoardComponent
+    BoardComponent,
+    TodoDialogComponent
     
   ],
   imports: [
@@ -31,7 +34,8 @@ import { BoardComponent } from './pages/board/board.component';
     OverlayModule,
     FontAwesomeModule,
     CdkAccordionModule,
-    DragDropModule
+    DragDropModule,
+    DialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
